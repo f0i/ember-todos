@@ -1,4 +1,4 @@
-all:
+all: clean
 	bundle exec rakep build
 
 dependencies:
@@ -6,3 +6,4 @@ dependencies:
 
 clean:
 	- rm -r public/
+	- rm -r tmp/

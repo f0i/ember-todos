@@ -1,17 +1,13 @@
 Todos
 =====
 
-The obligatory todos example. This one uses [rake-pipeline](https://github.com/livingsocial/rake-pipeline).
-
-The Assetfile is pretty heavily commented, so if you'd like to know more about how to use
-rake-pipeline in real life, you should check it out.
+The obligatory Todos example. This one uses [rake-pipeline](https://github.com/livingsocial/rake-pipeline).
 
 Building
 --------
 
-First, run `bundle` to install our dependencies. Then, `bundle exec rakep build` will assemble
-the app according to the Assetfile. This will output a `public/` directory containing a static
-web application. Rake-pipeline also includes a preview server, so while you're developing you
-can run `bundle exec rakep server` and rake-pipeline will serve your app on port 9292.
+Run `make dependencies` once.
 
-By Yehuda Katz and Tom Dale
+Then run `make` to generate or update files in `./public/`.
+
+Run `make clean` to remove all generated files.
